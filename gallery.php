@@ -1,3 +1,7 @@
+<?php
+$page = 'gallery';
+include 'functions.php';
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -35,20 +39,7 @@ $(function() {
             <div id="site_title">
             	<h1><a href="#">Blue Flame Template</a></h1>
             </div>
-            <div id="tooplate_menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="gallery.html" class="current">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="index_ru.html">Главная</a></li>
-                    <li><a href="contact_ru.html">Конакты</a></li>
-                    <li><a href="gallery_ru.html">Галерея</a></li>
-                    <li><a href="blog_ru.html">Блог</a></li>
-                    <li><a href="about_ru.html">О нас</a></li>                    
-                </ul>    	
-            </div> <!-- end of tooplate_menu -->
+           <?php echo menu_html($page);?>
         </div> <!-- end of forever header -->
         <div id="tooplate_main_top"></div>
         <div id="tooplate_middle_subpage">

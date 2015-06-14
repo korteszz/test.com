@@ -1,4 +1,5 @@
 <?php
+$page = 'index';
 include 'functions.php';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -49,7 +50,7 @@ $(window).load(function() {
             <div id="site_title">
             	<h1><a href="#">Blue Flame Template</a></h1>
             </div>
-            <?php echo menu_html();?>
+            <?php echo menu_html($page);?>
         </div> <!-- end of forever header -->
         
         <div id="tooplate_main_top"></div>
