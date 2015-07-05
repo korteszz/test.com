@@ -3,7 +3,6 @@ function menu_html($current)
 {
     $empty = '';
     $classCurrent = ' class="current"';
-
     $pages = [
         'index' => '<li><a href="index.php"%s>Home</a></li>',
         'about' => '<li><a href="about.php"%s>About Us</a></li>',
@@ -16,7 +15,6 @@ function menu_html($current)
         'gallery_ru' => '<li><a href="gallery_ru.php"%s>Галерея</a></li>',
         'contact_ru' => '<li><a href="contact_ru.php"%s>Конакты</a></li>'
     ];
-
     foreach ($pages as $key => $value) {
         //var_dump($key, $current, $key === $current);echo '<br>';
         if ($current === $key) {
@@ -29,3 +27,4 @@ function menu_html($current)
                 <ul>' . implode('', $pages) . '</ul>
             </div> <!-- end of tooplate_menu -->';
 }
+

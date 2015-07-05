@@ -1,38 +1,18 @@
 <?php
 $page = 'gallery';
-include 'functions.php';
+include '../functions.php';
+include '../php/html.php';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- 
-	Template 2046 Blue Flame 
-	by www.tooplate.com 
--->
-<title>Blue Flame - Gallery</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="css/tooplate_style.css" rel="stylesheet" type="text/css" />
-
-<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" />    
-    
-<!-- Arquivos utilizados pelo jQuery lightBox plugin -->
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
-<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
-<!-- / fim dos arquivos utilizados pelo jQuery lightBox plugin -->
-
-<!-- Ativando o jQuery lightBox plugin -->
-<script type="text/javascript">
-$(function() {
-    $('.lightbox').lightBox();
-});
-</script>
-
-</head>
+<?php
+html_head();
+?>
 <body>
 <div id="tooplate_body_wrapper">
+    <?php
+    html_lang_block();
+    ?>
     <div id="tooplate_wrapper">
             
         <div id="tooplate_header">

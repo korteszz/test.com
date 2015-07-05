@@ -1,25 +1,18 @@
+<?php
+$page = 'about';
+include 'php/html.php';
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Select lang</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="css/tooplate_style.css" rel="stylesheet" type="text/css" />
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
-<script src="js/jquery.min.js" type="text/javascript"></script>
-<script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
-</head>
+<?php
+html_head(true);
+?>
 <body>
     <div id="tooplate_body_wrapper">
         <div id="tooplate_wrapper">
-            <div class="left">
-                <ul class="top-nav lang-links">
-                    <li><a href="ru/index.php"><img width="24" height="23" alt="" src="/images/flag_ru.gif">Русская версия</a></li>
-                    <li><a href="en/index.php"><img width="24" height="23" alt="" src="/images/flag_gb.gif">English<br>version</a></li>
-                </ul>
-            </div>         
+            <?php
+            html_lang_block(true);
+            ?>
             <div id="tooplate_header">
                 <div id="site_title">
                     <h1><a href="#">Blue Flame Template</a></h1>
